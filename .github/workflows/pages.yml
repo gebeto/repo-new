@@ -31,5 +31,6 @@ jobs:
       with:
         branch: gh-pages
         folder: public
+        token: ${{ secrets.GITHUB_ACCESS_TOKEN }}
         git-config-name: gebeto
         git-config-email: slavik.nychkalo@gmail.com
