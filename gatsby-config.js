@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: '/repo-new',
   siteMetadata: {
     title: `Gatsby Starter Blog`,
     author: {
