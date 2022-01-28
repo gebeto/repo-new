@@ -13,6 +13,7 @@ module.exports = {
     },
   },
   plugins: [
+    require.resolve(`./plugins/dpkg-source-plugin`),
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
