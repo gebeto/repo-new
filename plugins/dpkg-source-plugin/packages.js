@@ -38,5 +38,6 @@ const getPackages = async (path) => {
 };
 
 
+exports.exec = exec;
 exports.getPackagesText = getPackagesText;
 exports.getPackages = getPackages;

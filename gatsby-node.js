@@ -1,5 +1,5 @@
 const path = require(`path`)
-const fs = require(`fs/promises`)
+const fs = require(`fs/promises`);
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
 
@@ -100,10 +100,12 @@ exports.createPages = async (options) => {
   await createPostPages(options);
   await createPackagesPages(options);
 
-  const { getPackagesText } = require('./plugins/dpkg-source-plugin/packages');
+  const { getPackagesText, exec } = require('./plugins/dpkg-source-plugin/packages');
   const packagesText = await getPackagesText('./debs');
 
-  await fs.writeFile('./public/Packages', packagesText)
+  await fs.writeFile('./public/Packages', packagesText);
+  await exec('bzip2 -c ./public/Packages > ./public/Packages.bz2');
+  await exec('gzip -c ./public/Packages > ./public/Packages.gz');
   await fs.writeFile('./public/Release', `Origin: gebeto-new
 Label: gebeto-new
 Suite: stable
@@ -112,7 +114,7 @@ Codename: ios
 Architectures: iphoneos-arm
 Components: main
 Description: gebeto repository
-`)
+`);
 }
 
 
