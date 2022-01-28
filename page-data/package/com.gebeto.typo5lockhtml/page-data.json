@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-package-js",
+    "path": "/package/com.gebeto.typo5lockhtml",
+    "result": {"data":{"dpkg":{"id":"com.gebeto.typo5lockhtml","Name":"Typo5 LockHTML","Package":"com.gebeto.typo5lockhtml","Version":"2.0","Section":"Widgets","Description":"Часы на весь екран"}},"pageContext":{"package":"com.gebeto.typo5lockhtml"}},
+    "staticQueryHashes": []}

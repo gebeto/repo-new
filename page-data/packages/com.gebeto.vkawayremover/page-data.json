@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-templates-package-js",
-    "path": "/packages/com.gebeto.vkawayremover",
-    "result": {"data":{"dpkg":{"id":"com.gebeto.vkawayremover","Name":"VK Away Remover","Package":"com.gebeto.vkawayremover","Version":"0.1","Section":"Tweaks","Description":"Убирает проверку ссылок"}},"pageContext":{"package":"com.gebeto.vkawayremover"}},
-    "staticQueryHashes": []}

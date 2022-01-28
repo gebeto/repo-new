@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-package-js",
+    "path": "/package/com.gebeto.colorflowlockhtml",
+    "result": {"data":{"dpkg":{"id":"com.gebeto.colorflowlockhtml","Name":"ColorFlow LockHTML","Package":"com.gebeto.colorflowlockhtml","Version":"2.0","Section":"Widgets","Description":"Хорошие часы с переходом и датой"}},"pageContext":{"package":"com.gebeto.colorflowlockhtml"}},
+    "staticQueryHashes": []}

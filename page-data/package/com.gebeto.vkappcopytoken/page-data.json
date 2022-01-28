@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-package-js",
+    "path": "/package/com.gebeto.vkappcopytoken",
+    "result": {"data":{"dpkg":{"id":"com.gebeto.vkappcopytoken","Name":"VKApp Copy Token","Package":"com.gebeto.vkappcopytoken","Version":"0.0.8","Section":"Tweaks","Description":"Твик для копирования токена с VK App"}},"pageContext":{"package":"com.gebeto.vkappcopytoken"}},
+    "staticQueryHashes": []}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-package-js",
+    "path": "/package/com.gebeto.vkmessageslock",
+    "result": {"data":{"dpkg":{"id":"com.gebeto.vkmessageslock","Name":"VK Messages Lock","Package":"com.gebeto.vkmessageslock","Version":"0.0.1","Section":"Tweaks","Description":"Твик для блокировки сообщений VK App на пароль 1111"}},"pageContext":{"package":"com.gebeto.vkmessageslock"}},
+    "staticQueryHashes": []}

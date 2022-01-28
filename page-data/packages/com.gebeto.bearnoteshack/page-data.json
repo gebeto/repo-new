@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-templates-package-js",
-    "path": "/packages/com.gebeto.bearnoteshack",
-    "result": {"data":{"dpkg":{"id":"com.gebeto.bearnoteshack","Name":"Bear (Notes) Hack","Package":"com.gebeto.bearnoteshack","Version":"0.1","Section":"Tweaks (Hacks)","Description":"Beat Awesome Notes Hack for premium subscription"}},"pageContext":{"package":"com.gebeto.bearnoteshack"}},
-    "staticQueryHashes": []}

@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-templates-package-js",
-    "path": "/packages/com.gebeto.zvooqhack",
-    "result": {"data":{"dpkg":{"id":"com.gebeto.zvooqhack","Name":"Zvooq Hack","Package":"com.gebeto.zvooqhack","Version":"0.1","Section":"Tweaks (Hacks)","Description":"Хак на приложение Zvooq, подписка и убрана реклама"}},"pageContext":{"package":"com.gebeto.zvooqhack"}},
-    "staticQueryHashes": []}

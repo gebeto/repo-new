@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-package-js",
+    "path": "/package/com.pantsthief.flexing",
+    "result": {"data":{"dpkg":{"id":"com.pantsthief.flexing","Name":"FLEXing","Package":"com.pantsthief.flexing","Version":"1.2.0","Section":"Tweaks","Description":"Open FLEX anywhere!"}},"pageContext":{"package":"com.pantsthief.flexing"}},
+    "staticQueryHashes": []}

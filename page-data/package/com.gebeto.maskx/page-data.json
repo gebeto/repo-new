@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-package-js",
+    "path": "/package/com.gebeto.maskx",
+    "result": {"data":{"dpkg":{"id":"com.gebeto.maskx","Name":"Maskx","Package":"com.gebeto.maskx","Version":"1.0","Section":"Widgets","Description":"Часы переривающиеся маской"}},"pageContext":{"package":"com.gebeto.maskx"}},
+    "staticQueryHashes": []}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-package-js",
+    "path": "/package/com.gebeto.shellyhack",
+    "result": {"data":{"dpkg":{"id":"com.gebeto.shellyhack","Name":"Shelly Hack","Package":"com.gebeto.shellyhack","Version":"0.1","Section":"Tweaks (Hacks)","Description":"Shelly terminal premium hack!"}},"pageContext":{"package":"com.gebeto.shellyhack"}},
+    "staticQueryHashes": []}
