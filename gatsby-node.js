@@ -85,7 +85,7 @@ const createPackagesPages = async ({ graphql, actions, reporter }) => {
   if (packages.length > 0) {
     packages.forEach(package => {
       createPage({
-        path: `/packages/${package.id}`,
+        path: `/package/${package.id}`,
         component: packageTemplate,
         context: {
           package: package.id

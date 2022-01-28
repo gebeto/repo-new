@@ -38,7 +38,7 @@ const PackagesPage = ({ data, location }) => {
                 >
                   <header>
                     <h2>
-                      <Link to={item.id} itemProp="url">
+                      <Link to={`/package/${item.id}`} itemProp="url">
                         <span itemProp="headline">{item.Name}</span>
                       </Link>
                     </h2>
