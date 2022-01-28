@@ -1,6 +1,0 @@
-{
-    "componentChunkName": "component---src-pages-packages-[package]-js",
-    "path": "/packages/[package]/",
-    "result": {"data":{"allDpkg":{"nodes":[{"id":"com.gebeto.audioenglish","Name":"Самоучитель английского языка. Полный курс: иностранный язык с нуля для начинающих","Filename":"./debs/audioenglish_1.0.deb","Package":"com.gebeto.audioenglish","Version":"1.0"},{"id":"com.gebeto.premiumkingpack","Name":"Premium King Pack","Filename":"./debs/premiumkingpack_9.0.deb","Package":"com.gebeto.premiumkingpack","Version":"9.0"}]}},"pageContext":{}},
-    "staticQueryHashes": [],
-    "matchPath": "/packages/:package"}
