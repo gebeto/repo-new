@@ -104,16 +104,33 @@ exports.createPages = async (options) => {
   const packagesText = await getPackagesText('./debs');
 
   await fs.writeFile('./public/Packages', packagesText);
+  await exec('cp -r ./debs ./public/debs');
   await exec('bzip2 -c ./public/Packages > ./public/Packages.bz2');
   await exec('gzip -c ./public/Packages > ./public/Packages.gz');
-  await fs.writeFile('./public/Release', `Origin: gebeto-new
-Label: gebeto-new
+
+  const repo = (await options.graphql(`
+    query Repo {
+      site {
+        siteMetadata {
+          repo {
+            name
+            description
+          }
+        }
+      }
+    }
+  `)).data.site.siteMetadata.repo;
+
+  console.log(' >>>> SSSS', repo)
+
+  await fs.writeFile('./public/Release', `Origin: ${repo.name}
+Label: ${repo.name}
 Suite: stable
 Version: 1.0
 Codename: ios
 Architectures: iphoneos-arm
 Components: main
-Description: gebeto repository
+Description: ${repo.description}
 `);
 }
 

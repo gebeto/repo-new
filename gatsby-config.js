@@ -11,6 +11,10 @@ module.exports = {
     social: {
       twitter: `_pupiti`,
     },
+    repo: {
+      name: 'gebeto',
+      description: 'gebeto repository',
+    }
   },
   plugins: [
     require.resolve(`./plugins/dpkg-source-plugin`),
