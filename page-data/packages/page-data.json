@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-pages-packages-js",
-    "path": "/packages/",
-    "result": {"data":{"site":{"siteMetadata":{"title":"Cydia Repo"}},"allDpkg":{"nodes":[{"id":"com.gebeto.premiumkingpack","Name":"Premium King Pack","Section":"Themes","Filename":"./debs/premiumkingpack_9.0.deb","Package":"com.gebeto.premiumkingpack","Version":"9.0","Description":"Супер пак с супер возможностями:)"},{"id":"com.gebeto.audioenglish","Name":"Самоучитель английского языка. Полный курс: иностранный язык с нуля для начинающих","Section":"Tweaks (Hacks)","Filename":"./debs/audioenglish_1.0.deb","Package":"com.gebeto.audioenglish","Version":"1.0","Description":"Взлом  на подписку, все открыто"}]}},"pageContext":{}},
-    "staticQueryHashes": ["2841359383"]}
