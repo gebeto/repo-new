@@ -26,32 +26,37 @@ const PackagesPage = ({ data, location }) => {
       <Seo title="All packages" />
       <Bio />
       <ol style={{ listStyle: `none` }}>
-        {packages.map((item) => (
-          <li key={item.id}>
-            <article
-              className="post-list-item"
-              itemScope
-              itemType="http://schema.org/Article"
-            >
-              <header>
-                <h2>
-                  <Link to={item.id} itemProp="url">
-                    <span itemProp="headline">{item.Name}</span>
-                  </Link>
-                </h2>
-                <div>
-                  <small className="pill bg-blue">{item.Package}</small>
-                  {' '}
-                  <small className="pill bg-green">v{item.Version}</small>
-                  {' '}
-                  <small className="pill bg-orange">{item.Section}</small>
-                </div>
-                <div>
-                  <small>{item.Description}</small>
-                </div>
-              </header>
-            </article>
-          </li>
+        {data.allDpkg.group.map(group => (
+          <div>
+            <h3>{group.fieldValue}</h3>
+            {group.nodes.map((item) => (
+              <li key={item.id}>
+                <article
+                  className="post-list-item"
+                  itemScope
+                  itemType="http://schema.org/Article"
+                >
+                  <header>
+                    <h2>
+                      <Link to={item.id} itemProp="url">
+                        <span itemProp="headline">{item.Name}</span>
+                      </Link>
+                    </h2>
+                    <div>
+                      <small className="pill bg-orange">{item.Section}</small>
+                      {' '}
+                      <small className="pill bg-blue">{item.Package}</small>
+                      {' '}
+                      <small className="pill bg-green">v{item.Version}</small>
+                    </div>
+                    <div>
+                      <small>{item.Description}</small>
+                    </div>
+                  </header>
+                </article>
+              </li>
+            ))}
+          </div>
         ))}
       </ol>
     </Layout>
@@ -78,6 +83,19 @@ export const pageQuery = graphql`
         Package
         Version
         Description
+      }
+
+      group(field: Section) {
+        fieldValue
+        nodes {
+          id
+          Name
+          Section
+          Filename
+          Package
+          Version
+          Description
+        }
       }
     }
   }
