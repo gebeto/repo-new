@@ -1,15 +1,15 @@
 module.exports = {
   pathPrefix: '/repo-new',
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Cydia Repo`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Slavik Nychkalo`,
+      summary: `who lives and works in Lviv, Ukraine building useful things.`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    siteUrl: `https://gebeto.github.io/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `_pupiti`,
     },
   },
   plugins: [
