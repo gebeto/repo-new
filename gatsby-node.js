@@ -1,4 +1,5 @@
 const path = require(`path`)
+const fs = require(`fs/promises`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
 
@@ -98,6 +99,20 @@ const createPackagesPages = async ({ graphql, actions, reporter }) => {
 exports.createPages = async (options) => {
   await createPostPages(options);
   await createPackagesPages(options);
+
+  const { getPackagesText } = require('./plugins/dpkg-source-plugin/packages');
+  const packagesText = await getPackagesText('./debs');
+
+  await fs.writeFile('./public/Packages', packagesText)
+  await fs.writeFile('./public/Release', `Origin: gebeto-new
+Label: gebeto-new
+Suite: stable
+Version: 1.0
+Codename: ios
+Architectures: iphoneos-arm
+Components: main
+Description: gebeto repository
+`)
 }
 
 
