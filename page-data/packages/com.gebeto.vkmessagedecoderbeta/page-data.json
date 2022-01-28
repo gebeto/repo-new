@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-package-js",
+    "path": "/packages/com.gebeto.vkmessagedecoderbeta",
+    "result": {"data":{"dpkg":{"id":"com.gebeto.vkmessagedecoderbeta","Name":"VK Messages Encode","Package":"com.gebeto.vkmessagedecoderbeta","Version":"0.1","Section":"Tweaks","Description":"Tweak for Decode and Encode messages in VK."}},"pageContext":{"package":"com.gebeto.vkmessagedecoderbeta"}},
+    "staticQueryHashes": []}

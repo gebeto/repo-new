@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-package-js",
+    "path": "/packages/com.gebeto.glitchehack",
+    "result": {"data":{"dpkg":{"id":"com.gebeto.glitchehack","Name":"Glitche Hack","Package":"com.gebeto.glitchehack","Version":"1.0","Section":"Tweaks (Hacks)","Description":"Glitche hack, open all modes and filters"}},"pageContext":{"package":"com.gebeto.glitchehack"}},
+    "staticQueryHashes": []}

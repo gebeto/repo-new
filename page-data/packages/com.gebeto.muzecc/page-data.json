@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-package-js",
+    "path": "/packages/com.gebeto.muzecc",
+    "result": {"data":{"dpkg":{"id":"com.gebeto.muzecc","Name":"Muze CC","Package":"com.gebeto.muzecc","Version":"0.1","Section":"Themes","Description":"Тема для Контрол Центра."}},"pageContext":{"package":"com.gebeto.muzecc"}},
+    "staticQueryHashes": []}

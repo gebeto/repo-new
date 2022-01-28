@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-package-js",
+    "path": "/packages/com.gebeto.typo5russianlockhtml",
+    "result": {"data":{"dpkg":{"id":"com.gebeto.typo5russianlockhtml","Name":"Typo5 Russian LockHTML","Package":"com.gebeto.typo5russianlockhtml","Version":"2.2","Section":"Widgets","Description":"Шедевральные часы на весь екран"}},"pageContext":{"package":"com.gebeto.typo5russianlockhtml"}},
+    "staticQueryHashes": []}

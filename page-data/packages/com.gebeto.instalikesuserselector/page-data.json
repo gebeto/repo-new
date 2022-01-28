@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-package-js",
+    "path": "/packages/com.gebeto.instalikesuserselector",
+    "result": {"data":{"dpkg":{"id":"com.gebeto.instalikesuserselector","Name":"InstaLikes User Selector","Package":"com.gebeto.instalikesuserselector","Version":"0.0.1-26+debug","Section":"Tweaks","Description":"Select username for likes in InstaLikes"}},"pageContext":{"package":"com.gebeto.instalikesuserselector"}},
+    "staticQueryHashes": []}
