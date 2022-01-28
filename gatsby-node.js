@@ -1,13 +1,10 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
-exports.createPages = async ({ graphql, actions, reporter }) => {
+
+const createPostPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
-
-  // Define a template for blog post
   const blogPost = path.resolve(`./src/templates/blog-post.js`)
-
-  // Get all markdown blog posts sorted by date
   const result = await graphql(
     `
       {
@@ -58,6 +55,52 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   }
 }
 
+
+const createPackagesPages = async ({ graphql, actions, reporter }) => {
+  const { createPage } = actions
+  const packageTemplate = path.resolve(`./src/templates/package.js`);
+  const result = await graphql(
+    `
+      {
+        allDpkg {
+          nodes {
+            id
+          }
+        }
+      }
+    `
+  )
+
+  if (result.errors) {
+    reporter.panicOnBuild(
+      `There was an error loading your blog posts`,
+      result.errors
+    )
+    return
+  }
+
+  const packages = result.data.allDpkg.nodes;
+
+  if (packages.length > 0) {
+    packages.forEach(package => {
+      createPage({
+        path: `/packages/${package.id}`,
+        component: packageTemplate,
+        context: {
+          package: package.id
+        },
+      })
+    })
+  }
+}
+
+
+exports.createPages = async (options) => {
+  await createPostPages(options);
+  await createPackagesPages(options);
+}
+
+
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
 
@@ -71,6 +114,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     })
   }
 }
+
 
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions

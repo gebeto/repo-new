@@ -1,19 +1,17 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../../components/bio"
-import Layout from "../../components/layout"
-import Seo from "../../components/seo"
+import Layout from "../components/layout"
+import Seo from "../components/seo"
 
-const Packages = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`
+
+const PackagesPage = ({ data, location }) => {
   const packages = data.allDpkg.nodes;
 
   if (packages.length === 0) {
     return (
-      <Layout location={location} title={siteTitle}>
+      <Layout location={location} title="Packages">
         <Seo title="All packages" />
-        <Bio />
         <p>
           No packages found. Add deb files to "debs"
         </p>
@@ -22,9 +20,8 @@ const Packages = ({ data, location }) => {
   }
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location} title="Packages">
       <Seo title="All packages" />
-      <Bio />
       <ol style={{ listStyle: `none` }}>
         {packages.map((item) => (
           <li key={item.id}>
@@ -39,8 +36,16 @@ const Packages = ({ data, location }) => {
                     <span itemProp="headline">{item.Name}</span>
                   </Link>
                 </h2>
-                <small>{item.Name}</small><br />
-                <small>{item.Package} | v{item.Version}</small>
+                <div>
+                  <small className="pill bg-blue">{item.Package}</small>
+                  {' '}
+                  <small className="pill bg-green">v{item.Version}</small>
+                  {' '}
+                  <small className="pill bg-orange">{item.Section}</small>
+                </div>
+                <div>
+                  <small>{item.Description}</small>
+                </div>
               </header>
             </article>
           </li>
@@ -50,7 +55,9 @@ const Packages = ({ data, location }) => {
   )
 }
 
-export default Packages;
+
+export default PackagesPage;
+
 
 export const pageQuery = graphql`
   query {
@@ -59,13 +66,15 @@ export const pageQuery = graphql`
         title
       }
     }
-    allDpkg {
+    allDpkg(sort: {fields: Name, order: ASC}) {
       nodes {
         id
         Name
+        Section
         Filename
         Package
         Version
+        Description
       }
     }
   }

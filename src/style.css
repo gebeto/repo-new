@@ -331,3 +331,34 @@ a:focus {
     list-style-position: inside;
   }
 }
+
+.pill {
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+.bg-orange {
+  background-color: rgba(243, 156, 18, 1.0);
+  color: #fff;
+}
+
+.bg-green {
+  background-color: rgba(46, 204, 113, 1.0);
+  color: #fff;
+}
+
+.bg-blue {
+  background-color: rgba(52, 152, 219, 1.0);
+  color: #fff;
+}
+
+.bg-purple {
+  background-color: rgba(155, 89, 182, 1.0);
+  color: #fff;
+}
+
+.bg-red {
+  background-color: rgba(231, 76, 60, 1.0);
+  color: #fff;
+}
