@@ -36,14 +36,13 @@ exports.sourceNodes = async ({
   data.packages.forEach(package =>
     createNode({
       ...package,
-      id: createNodeId(`${DPKG_NODE_TYPE}-${package.id}`),
-      // parent: null,
-      // children: [],
-      // internal: {
-      //   type: DPKG_NODE_TYPE,
-      //   content: JSON.stringify(package),
-      //   contentDigest: createContentDigest(package),
-      // },
+      // id: createNodeId(`${DPKG_NODE_TYPE}-${package.id}`),
+      id: package.Package,
+      internal: {
+        type: DPKG_NODE_TYPE,
+        // content: JSON.stringify(package),
+        contentDigest: createContentDigest(package),
+      },
     })
   )
   return
