@@ -57,48 +57,8 @@ const createPostPages = async ({ graphql, actions, reporter }) => {
 }
 
 
-const createPackagesPages = async ({ graphql, actions, reporter }) => {
-  const { createPage } = actions
-  const packageTemplate = path.resolve(`./src/templates/package.js`);
-  const result = await graphql(
-    `
-      {
-        allDpkg {
-          nodes {
-            id
-          }
-        }
-      }
-    `
-  )
-
-  if (result.errors) {
-    reporter.panicOnBuild(
-      `There was an error loading your blog posts`,
-      result.errors
-    )
-    return
-  }
-
-  const packages = result.data.allDpkg.nodes;
-
-  if (packages.length > 0) {
-    packages.forEach(package => {
-      createPage({
-        path: `/package/${package.id}`,
-        component: packageTemplate,
-        context: {
-          package: package.id
-        },
-      })
-    })
-  }
-}
-
-
 exports.createPages = async (options) => {
   await createPostPages(options);
-  await createPackagesPages(options);
 
   const { getPackagesText, exec } = require('./plugins/dpkg-source-plugin/packages');
   const packagesText = await getPackagesText('./debs');

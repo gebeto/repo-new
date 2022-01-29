@@ -37,7 +37,7 @@ exports.sourceNodes = async ({
     createNode({
       ...package,
       // id: createNodeId(`${DPKG_NODE_TYPE}-${package.id}`),
-      id: package.Package,
+      id: package.Package.replace(/\./g, '-'),
       internal: {
         type: DPKG_NODE_TYPE,
         // content: JSON.stringify(package),

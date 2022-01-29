@@ -1,9 +1,9 @@
 import * as React from "react";
 import { graphql } from "gatsby";
-import Layout from "../components/layout";
+import Layout from "../../components/layout";
 
 
-const PackageTemplate = ({ data, location }) => {
+const PackagePage = ({ data, location }) => {
   const { dpkg } = data;
   
   return (
@@ -28,12 +28,12 @@ const PackageTemplate = ({ data, location }) => {
 }
 
 
-export default PackageTemplate;
+export default PackagePage;
 
 
 export const pageQuery = graphql`
-  query Package($package: String) {
-    dpkg(id: { eq: $package }) {
+  query Dpkg($id: String) {
+    dpkg(id: { eq: $id }) {
       id
       Name
       Package
