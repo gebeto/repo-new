@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-package-dpkg-id-js",
+    "path": "/package/com-gebeto-typo5cydget/",
+    "result": {"data":{"dpkg":{"id":"com-gebeto-typo5cydget","Name":"Typo5 Cydget","Package":"com.gebeto.typo5cydget","Version":"1.0","Section":"Widgets","Description":"Крутые часы на весь екран!"}},"pageContext":{"id":"com-gebeto-typo5cydget","__params":{"id":"com-gebeto-typo5cydget"}}},
+    "staticQueryHashes": []}

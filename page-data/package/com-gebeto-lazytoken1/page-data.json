@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-package-dpkg-id-js",
+    "path": "/package/com-gebeto-lazytoken1/",
+    "result": {"data":{"dpkg":{"id":"com-gebeto-lazytoken1","Name":"Lazy Token","Package":"com.gebeto.lazytoken1","Version":"1.5","Section":"Tweaks","Description":"Enter LazyTool2 access token  Для активации твика, сделайте длинный тап по нижнему бару в приложении. Откроется окошко для ввода vk access_token Вставте там свой токен и нажмите OK После этого авторизируйтесь через вк в самом lazytool"}},"pageContext":{"id":"com-gebeto-lazytoken1","__params":{"id":"com-gebeto-lazytoken1"}}},
+    "staticQueryHashes": []}

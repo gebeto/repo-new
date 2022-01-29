@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-package-dpkg-id-js",
+    "path": "/package/com-gebeto-likeshack/",
+    "result": {"data":{"dpkg":{"id":"com-gebeto-likeshack","Name":"likesHACK","Package":"com.gebeto.likeshack","Version":"0.0.1-1+debug","Section":"Tweaks (Hacks)","Description":"An awesome MobileSubstrate tweak!"}},"pageContext":{"id":"com-gebeto-likeshack","__params":{"id":"com-gebeto-likeshack"}}},
+    "staticQueryHashes": []}

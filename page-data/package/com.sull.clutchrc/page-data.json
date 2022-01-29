@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-templates-package-js",
-    "path": "/package/com.sull.clutchrc",
-    "result": {"data":{"dpkg":{"id":"com.sull.clutchrc","Name":"Clutch 2.0 RC","Package":"com.sull.clutchrc","Version":"2.0~RC8","Section":"iSystem","Description":"Clutch is an extremely fast cracking utility."}},"pageContext":{"package":"com.sull.clutchrc"}},
-    "staticQueryHashes": []}

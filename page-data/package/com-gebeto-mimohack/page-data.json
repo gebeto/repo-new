@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-package-dpkg-id-js",
+    "path": "/package/com-gebeto-mimohack/",
+    "result": {"data":{"dpkg":{"id":"com-gebeto-mimohack","Name":"Mimo Hack","Package":"com.gebeto.mimohack","Version":"2.0","Section":"Tweaks (Hacks)","Description":"Взлом на премиум для Mimo: Learn how to code through interactive tutorials and quizzes!"}},"pageContext":{"id":"com-gebeto-mimohack","__params":{"id":"com-gebeto-mimohack"}}},
+    "staticQueryHashes": []}

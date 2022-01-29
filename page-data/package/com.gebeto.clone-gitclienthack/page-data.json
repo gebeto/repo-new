@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-templates-package-js",
-    "path": "/package/com.gebeto.clone-gitclienthack",
-    "result": {"data":{"dpkg":{"id":"com.gebeto.clone-gitclienthack","Name":"Clone - Git Client Hack","Package":"com.gebeto.clone-gitclienthack","Version":"0.1","Section":"Tweaks (Hacks)","Description":"Clone (Git Client) Hack, full activated PUSH and PULL"}},"pageContext":{"package":"com.gebeto.clone-gitclienthack"}},
-    "staticQueryHashes": []}

@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-templates-package-js",
-    "path": "/package/com.gebeto.kingstatusbar",
-    "result": {"data":{"dpkg":{"id":"com.gebeto.kingstatusbar","Name":"KingStatusBar","Package":"com.gebeto.kingstatusbar","Version":"3.0","Section":"Themes","Description":"Изменяет вид индикатора вифи и связи."}},"pageContext":{"package":"com.gebeto.kingstatusbar"}},
-    "staticQueryHashes": []}

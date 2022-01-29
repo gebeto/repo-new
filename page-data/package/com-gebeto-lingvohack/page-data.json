@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-package-dpkg-id-js",
+    "path": "/package/com-gebeto-lingvohack/",
+    "result": {"data":{"dpkg":{"id":"com-gebeto-lingvohack","Name":"Lingvo Hack","Package":"com.gebeto.lingvohack","Version":"1.0-1","Section":"Tweaks (Hacks)","Description":"Hack for Abbyy Lingvo! All purchased."}},"pageContext":{"id":"com-gebeto-lingvohack","__params":{"id":"com-gebeto-lingvohack"}}},
+    "staticQueryHashes": []}

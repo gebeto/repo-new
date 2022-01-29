@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-templates-package-js",
-    "path": "/package/com.gebeto.ls161rusmod",
-    "result": {"data":{"dpkg":{"id":"com.gebeto.ls161rusmod","Name":"LS 161 Rus Mod","Package":"com.gebeto.ls161rusmod","Version":"1.2","Section":"Widgets","Description":"Часы в нижнем углу екрана"}},"pageContext":{"package":"com.gebeto.ls161rusmod"}},
-    "staticQueryHashes": []}
