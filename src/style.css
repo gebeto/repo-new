@@ -334,6 +334,12 @@ a:focus {
 
 /* Media queries */
 
+@media (max-width: 480px) {
+  .post-list-group li {
+    grid-column: span 2;
+  }
+}
+
 @media (max-width: 42rem) {
   blockquote {
     padding: var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-4);
