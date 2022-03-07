@@ -27,7 +27,7 @@ const PackagesPage = ({ data, location }) => {
       <Bio />
       <ol style={{ listStyle: `none` }}>
         {data.allDpkg.group.map(group => (
-          <div>
+          <div className="post-list-group">
             <h3>{group.fieldValue}</h3>
             {group.nodes.map((item) => (
               <li key={item.id}>
@@ -43,9 +43,9 @@ const PackagesPage = ({ data, location }) => {
                       </Link>
                     </h2>
                     <div>
-                      <small className="pill bg-orange">{item.Section}</small>
-                      {' '}
                       <small className="pill bg-blue">{item.Package}</small>
+                      <br />
+                      <small className="pill bg-orange">{item.Section}</small>
                       {' '}
                       <small className="pill bg-green">v{item.Version}</small>
                     </div>
