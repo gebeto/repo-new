@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: '/repo-new',
+  pathPrefix: "/repo-new",
   siteMetadata: {
     title: `Cydia Repo`,
     author: {
@@ -12,13 +12,14 @@ module.exports = {
       twitter: `_pupiti`,
     },
     repo: {
-      name: 'gebeto',
-      description: 'gebeto repository',
-    }
+      name: "gebeto",
+      description: "gebeto repository",
+    },
   },
   plugins: [
     require.resolve(`./plugins/dpkg-source-plugin`),
     `gatsby-plugin-image`,
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
