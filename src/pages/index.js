@@ -1,10 +1,9 @@
-import * as React from "react"
-import { Link, graphql } from "gatsby"
+import * as React from "react";
+import { Link, graphql } from "gatsby";
 
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 import Bio from "../components/bio";
-
 
 const PackagesPage = ({ data, location }) => {
   const title = data.site.siteMetadata?.title || "Packages";
@@ -14,11 +13,9 @@ const PackagesPage = ({ data, location }) => {
     return (
       <Layout location={location} title={title}>
         <Seo title="All packages" />
-        <p>
-          No packages found. Add deb files to "debs"
-        </p>
+        <p>No packages found. Add deb files to "debs"</p>
       </Layout>
-    )
+    );
   }
 
   return (
@@ -29,7 +26,7 @@ const PackagesPage = ({ data, location }) => {
         {data.allDpkg.group.map(group => (
           <div className="post-list-group">
             <h3>{group.fieldValue}</h3>
-            {group.nodes.map((item) => (
+            {group.nodes.map(item => (
               <li key={item.id}>
                 <article
                   className="post-list-item"
@@ -45,8 +42,9 @@ const PackagesPage = ({ data, location }) => {
                     <div>
                       <small className="pill bg-blue">{item.Package}</small>
                       <br />
-                      <small className="pill bg-orange">{item.Section}</small>
-                      {' '}
+                      <small className="pill bg-orange">
+                        {item.Section}
+                      </small>{" "}
                       <small className="pill bg-green">v{item.Version}</small>
                     </div>
                     <div>
@@ -60,12 +58,10 @@ const PackagesPage = ({ data, location }) => {
         ))}
       </ol>
     </Layout>
-  )
-}
-
+  );
+};
 
 export default PackagesPage;
-
 
 export const pageQuery = graphql`
   query {
@@ -74,7 +70,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allDpkg(sort: {fields: Name, order: ASC}) {
+    allDpkg(sort: { fields: Name, order: ASC }) {
       nodes {
         id
         Name
@@ -99,4 +95,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

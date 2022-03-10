@@ -1,8 +1,8 @@
-import * as React from "react"
-import { graphql } from "gatsby"
-import styled from "styled-components"
-import Layout from "../../components/layout"
-import { Pill } from "../../components/Pill"
+import * as React from "react";
+import { graphql } from "gatsby";
+import styled from "styled-components";
+import Layout from "../../components/layout";
+import { Pill } from "../../components/Pill";
 
 const DownloadLink = styled.a`
   display: inline-block;
@@ -11,18 +11,18 @@ const DownloadLink = styled.a`
   color: #fff;
   border-radius: 6px;
   text-decoration: none;
-`
+`;
 
 const PageTitle = styled.h2`
   margin-bottom: 0px;
-`
+`;
 
 const PageContent = styled.div`
   margin-top: 16px;
-`
+`;
 
 const PackagePage = ({ data, location }) => {
-  const { dpkg } = data
+  const { dpkg } = data;
 
   return (
     <Layout location={location} title={dpkg.Name}>
@@ -45,10 +45,10 @@ const PackagePage = ({ data, location }) => {
         </DownloadLink>
       </PageContent>
     </Layout>
-  )
-}
+  );
+};
 
-export default PackagePage
+export default PackagePage;
 
 export const pageQuery = graphql`
   query Dpkg($id: String) {
@@ -62,4 +62,4 @@ export const pageQuery = graphql`
       Filename
     }
   }
-`
+`;
