@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import cydiaLogo from "./cydia.png";
 
 const CydiaBlock = styled.div`
@@ -11,9 +11,20 @@ const CydiaBlock = styled.div`
   }
 `;
 
-const Source = styled.div`
-  border: 1px solid rgba(0, 0, 0, 0.04);
-  background-color: rgba(0, 0, 0, 0.01);
+const sourceTypes = {
+  elevated: css`
+    border-top: 1px solid rgba(0, 0, 0, 0.01);
+    background-color: rgba(0, 0, 0, 0.01);
+    box-shadow: 0px 12px 24px -12px rgba(0, 0, 0, 0.2);
+  `,
+  bordered: css`
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    background-color: rgba(0, 0, 0, 0.01);
+  `,
+};
+
+const Source = styled.div<{ variant?: "bordered" | "elevated" }>`
+  ${props => sourceTypes[props.variant]}
   border-radius: 16px;
 
   padding: 16px;
@@ -40,6 +51,10 @@ const Source = styled.div`
     text-align: center;
   }
 `;
+
+Source.defaultProps = {
+  variant: "bordered",
+};
 
 export type CydiaProps = {};
 
