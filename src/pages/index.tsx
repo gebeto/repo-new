@@ -2,8 +2,8 @@ import * as React from "react";
 import { Link, graphql } from "gatsby";
 
 import Layout from "../components/layout";
-import Seo from "../components/seo";
-import Bio from "../components/bio";
+import { Meta } from "../components/Meta";
+import { Description } from "../components/Description";
 import { Pill } from "../components/Pill";
 import { Cydia } from "../components/Cydia";
 
@@ -14,7 +14,7 @@ const PackagesPage = ({ data, location }) => {
   if (packages.length === 0) {
     return (
       <Layout location={location} title={title}>
-        <Seo title="All packages" />
+        <Meta title="All packages" />
         <p>No packages found. Add deb files to "debs"</p>
       </Layout>
     );
@@ -22,8 +22,8 @@ const PackagesPage = ({ data, location }) => {
 
   return (
     <Layout location={location} title={title}>
-      <Seo title="All packages" />
-      <Bio />
+      <Meta title="All packages" />
+      <Description />
       <Cydia />
       <ol style={{ listStyle: `none` }}>
         {data.allDpkg.group.map(group => (
