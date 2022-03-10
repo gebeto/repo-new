@@ -1,74 +1,22 @@
-const path = require(`path`)
 const fs = require(`fs/promises`);
-const { createFilePath } = require(`gatsby-source-filesystem`)
+const { createFilePath } = require(`gatsby-source-filesystem`);
 
-
-const createPostPages = async ({ graphql, actions, reporter }) => {
-  const { createPage } = actions
-  const blogPost = path.resolve(`./src/templates/blog-post.js`)
-  const result = await graphql(
-    `
-      {
-        allMarkdownRemark(
-          sort: { fields: [frontmatter___date], order: ASC }
-          limit: 1000
-        ) {
-          nodes {
-            id
-            fields {
-              slug
-            }
-          }
-        }
-      }
-    `
-  )
-
-  if (result.errors) {
-    reporter.panicOnBuild(
-      `There was an error loading your blog posts`,
-      result.errors
-    )
-    return
-  }
-
-  const posts = result.data.allMarkdownRemark.nodes
-
-  // Create blog posts pages
-  // But only if there's at least one markdown file found at "content/blog" (defined in gatsby-config.js)
-  // `context` is available in the template as a prop and as a variable in GraphQL
-
-  if (posts.length > 0) {
-    posts.forEach((post, index) => {
-      const previousPostId = index === 0 ? null : posts[index - 1].id
-      const nextPostId = index === posts.length - 1 ? null : posts[index + 1].id
-
-      createPage({
-        path: post.fields.slug,
-        component: blogPost,
-        context: {
-          id: post.id,
-          previousPostId,
-          nextPostId,
-        },
-      })
-    })
-  }
-}
-
-
-exports.createPages = async (options) => {
+exports.createPages = async options => {
   await createPostPages(options);
 
-  const { getPackagesText, exec } = require('./plugins/dpkg-source-plugin/packages');
-  const packagesText = await getPackagesText('./debs');
+  const {
+    getPackagesText,
+    exec,
+  } = require("./plugins/dpkg-source-plugin/packages");
+  const packagesText = await getPackagesText("./debs");
 
-  await fs.writeFile('./public/Packages', packagesText);
-  await exec('cp -r ./debs ./public/debs');
-  await exec('bzip2 -c ./public/Packages > ./public/Packages.bz2');
-  await exec('gzip -c ./public/Packages > ./public/Packages.gz');
+  await fs.writeFile("./public/Packages", packagesText);
+  await exec("cp -r ./debs ./public/debs");
+  await exec("bzip2 -c ./public/Packages > ./public/Packages.bz2");
+  await exec("gzip -c ./public/Packages > ./public/Packages.gz");
 
-  const repo = (await options.graphql(`
+  const repo = (
+    await options.graphql(`
     query Repo {
       site {
         siteMetadata {
@@ -79,11 +27,12 @@ exports.createPages = async (options) => {
         }
       }
     }
-  `)).data.site.siteMetadata.repo;
+  `)
+  ).data.site.siteMetadata.repo;
 
-  console.log(' >>>> SSSS', repo)
-
-  await fs.writeFile('./public/Release', `Origin: ${repo.name}
+  await fs.writeFile(
+    "./public/Release",
+    `Origin: ${repo.name}
 Label: ${repo.name}
 Suite: stable
 Version: 1.0
@@ -91,27 +40,26 @@ Codename: ios
 Architectures: iphoneos-arm
 Components: main
 Description: ${repo.description}
-`);
-}
-
+`
+  );
+};
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions
+  const { createNodeField } = actions;
 
   if (node.internal.type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode })
+    const value = createFilePath({ node, getNode });
 
     createNodeField({
       name: `slug`,
       node,
       value,
-    })
+    });
   }
-}
-
+};
 
 exports.createSchemaCustomization = ({ actions }) => {
-  const { createTypes } = actions
+  const { createTypes } = actions;
 
   // Explicitly define the siteMetadata {} object
   // This way those will always be defined even if removed from gatsby-config.js
@@ -149,5 +97,5 @@ exports.createSchemaCustomization = ({ actions }) => {
     type Fields {
       slug: String
     }
-  `)
-}
+  `);
+};

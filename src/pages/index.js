@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 import Bio from "../components/bio";
+import { Pill } from "../components/Pill";
 
 const PackagesPage = ({ data, location }) => {
   const title = data.site.siteMetadata?.title || "Packages";
@@ -40,12 +41,10 @@ const PackagesPage = ({ data, location }) => {
                       </Link>
                     </h2>
                     <div>
-                      <small className="pill bg-blue">{item.Package}</small>
+                      <Pill color="blue">{item.Package}</Pill>
                       <br />
-                      <small className="pill bg-orange">
-                        {item.Section}
-                      </small>{" "}
-                      <small className="pill bg-green">v{item.Version}</small>
+                      <Pill color="orange">{item.Section}</Pill>{" "}
+                      <Pill color="green">v{item.Version}</Pill>
                     </div>
                     <div>
                       <small>{item.Description}</small>
