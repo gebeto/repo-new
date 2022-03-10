@@ -1,5 +1,5 @@
 {
-    "componentChunkName": "component---src-pages-package-dpkg-id-js",
+    "componentChunkName": "component---src-pages-package-dpkg-id-tsx",
     "path": "/package/com-gebeto-vpnmasterhack/",
-    "result": {"data":{"dpkg":{"id":"com-gebeto-vpnmasterhack","Name":"VPN Master Hack","Package":"com.gebeto.vpnmasterhack","Version":"0.1","Section":"Tweaks (Hacks)","Description":"VPN Master VIP Hack open VIP VPNs                                                                                  https://appsto.re/ru/D3Wi9.i"}},"pageContext":{"id":"com-gebeto-vpnmasterhack","__params":{"id":"com-gebeto-vpnmasterhack"}}},
+    "result": {"data":{"dpkg":{"id":"com-gebeto-vpnmasterhack","Name":"VPN Master Hack","Package":"com.gebeto.vpnmasterhack","Version":"0.1","Section":"Tweaks (Hacks)","Description":"VPN Master VIP Hack open VIP VPNs                                                                                  https://appsto.re/ru/D3Wi9.i","Filename":"./debs/vpnmasterhack_0.1.deb"}},"pageContext":{"id":"com-gebeto-vpnmasterhack","__params":{"id":"com-gebeto-vpnmasterhack"}}},
     "staticQueryHashes": []}

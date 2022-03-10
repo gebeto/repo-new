@@ -1,5 +1,5 @@
 {
-    "componentChunkName": "component---src-pages-package-dpkg-id-js",
+    "componentChunkName": "component---src-pages-package-dpkg-id-tsx",
     "path": "/package/com-nablac0d3-sslkillswitch2/",
-    "result": {"data":{"dpkg":{"id":"com-nablac0d3-sslkillswitch2","Name":"SSL Kill Switch 2","Package":"com.nablac0d3.sslkillswitch2","Version":"0.14-3+debug","Section":"Tweaks","Description":"Blackbox tool to disable SSL certificate validation - including certificate pinning - within iOS and OS X Apps."}},"pageContext":{"id":"com-nablac0d3-sslkillswitch2","__params":{"id":"com-nablac0d3-sslkillswitch2"}}},
+    "result": {"data":{"dpkg":{"id":"com-nablac0d3-sslkillswitch2","Name":"SSL Kill Switch 2","Package":"com.nablac0d3.sslkillswitch2","Version":"0.14-3+debug","Section":"Tweaks","Description":"Blackbox tool to disable SSL certificate validation - including certificate pinning - within iOS and OS X Apps.","Filename":"./debs/com.nablac0d3.sslkillswitch2_0.14.deb"}},"pageContext":{"id":"com-nablac0d3-sslkillswitch2","__params":{"id":"com-nablac0d3-sslkillswitch2"}}},
     "staticQueryHashes": []}

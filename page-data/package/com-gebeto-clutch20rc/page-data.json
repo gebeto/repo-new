@@ -1,5 +1,5 @@
 {
-    "componentChunkName": "component---src-pages-package-dpkg-id-js",
+    "componentChunkName": "component---src-pages-package-dpkg-id-tsx",
     "path": "/package/com-gebeto-clutch20rc/",
-    "result": {"data":{"dpkg":{"id":"com-gebeto-clutch20rc","Name":"Clutch 2.0.4","Package":"com.gebeto.clutch20rc","Version":"2.0.4","Section":"Terminal Support","Description":"Clutch is an extremely fast cracking utility."}},"pageContext":{"id":"com-gebeto-clutch20rc","__params":{"id":"com-gebeto-clutch20rc"}}},
+    "result": {"data":{"dpkg":{"id":"com-gebeto-clutch20rc","Name":"Clutch 2.0.4","Package":"com.gebeto.clutch20rc","Version":"2.0.4","Section":"Terminal Support","Description":"Clutch is an extremely fast cracking utility.","Filename":"./debs/clutch20rc_2.0.4.deb"}},"pageContext":{"id":"com-gebeto-clutch20rc","__params":{"id":"com-gebeto-clutch20rc"}}},
     "staticQueryHashes": []}

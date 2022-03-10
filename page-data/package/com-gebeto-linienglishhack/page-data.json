@@ -1,5 +1,5 @@
 {
-    "componentChunkName": "component---src-pages-package-dpkg-id-js",
+    "componentChunkName": "component---src-pages-package-dpkg-id-tsx",
     "path": "/package/com-gebeto-linienglishhack/",
-    "result": {"data":{"dpkg":{"id":"com-gebeto-linienglishhack","Name":"Lini English Hack","Package":"com.gebeto.linienglishhack","Version":"0.1","Section":"Tweaks (Hacks)","Description":"Lini English Hack все открыто"}},"pageContext":{"id":"com-gebeto-linienglishhack","__params":{"id":"com-gebeto-linienglishhack"}}},
+    "result": {"data":{"dpkg":{"id":"com-gebeto-linienglishhack","Name":"Lini English Hack","Package":"com.gebeto.linienglishhack","Version":"0.1","Section":"Tweaks (Hacks)","Description":"Lini English Hack все открыто","Filename":"./debs/linienglishhack_0.1.deb"}},"pageContext":{"id":"com-gebeto-linienglishhack","__params":{"id":"com-gebeto-linienglishhack"}}},
     "staticQueryHashes": []}

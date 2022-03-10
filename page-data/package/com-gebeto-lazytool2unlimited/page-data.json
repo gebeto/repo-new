@@ -1,5 +1,5 @@
 {
-    "componentChunkName": "component---src-pages-package-dpkg-id-js",
+    "componentChunkName": "component---src-pages-package-dpkg-id-tsx",
     "path": "/package/com-gebeto-lazytool2unlimited/",
-    "result": {"data":{"dpkg":{"id":"com-gebeto-lazytool2unlimited","Name":"LazyTool2 Unlimited","Package":"com.gebeto.lazytool2unlimited","Version":"2.0","Section":"Tweaks (Hacks)","Description":"Lazy Tool 2 Unlimited hack!!!!"}},"pageContext":{"id":"com-gebeto-lazytool2unlimited","__params":{"id":"com-gebeto-lazytool2unlimited"}}},
+    "result": {"data":{"dpkg":{"id":"com-gebeto-lazytool2unlimited","Name":"LazyTool2 Unlimited","Package":"com.gebeto.lazytool2unlimited","Version":"2.0","Section":"Tweaks (Hacks)","Description":"Lazy Tool 2 Unlimited hack!!!!","Filename":"./debs/lazytool2unlimited_2.0.deb"}},"pageContext":{"id":"com-gebeto-lazytool2unlimited","__params":{"id":"com-gebeto-lazytool2unlimited"}}},
     "staticQueryHashes": []}

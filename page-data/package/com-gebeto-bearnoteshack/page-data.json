@@ -1,5 +1,5 @@
 {
-    "componentChunkName": "component---src-pages-package-dpkg-id-js",
+    "componentChunkName": "component---src-pages-package-dpkg-id-tsx",
     "path": "/package/com-gebeto-bearnoteshack/",
-    "result": {"data":{"dpkg":{"id":"com-gebeto-bearnoteshack","Name":"Bear (Notes) Hack","Package":"com.gebeto.bearnoteshack","Version":"0.1","Section":"Tweaks (Hacks)","Description":"Beat Awesome Notes Hack for premium subscription"}},"pageContext":{"id":"com-gebeto-bearnoteshack","__params":{"id":"com-gebeto-bearnoteshack"}}},
+    "result": {"data":{"dpkg":{"id":"com-gebeto-bearnoteshack","Name":"Bear (Notes) Hack","Package":"com.gebeto.bearnoteshack","Version":"0.1","Section":"Tweaks (Hacks)","Description":"Beat Awesome Notes Hack for premium subscription","Filename":"./debs/bearnoteshack_0.1.deb"}},"pageContext":{"id":"com-gebeto-bearnoteshack","__params":{"id":"com-gebeto-bearnoteshack"}}},
     "staticQueryHashes": []}

@@ -1,5 +1,5 @@
 {
-    "componentChunkName": "component---src-pages-package-dpkg-id-js",
+    "componentChunkName": "component---src-pages-package-dpkg-id-tsx",
     "path": "/package/com-gebeto-shellyhack/",
-    "result": {"data":{"dpkg":{"id":"com-gebeto-shellyhack","Name":"Shelly Hack","Package":"com.gebeto.shellyhack","Version":"0.1","Section":"Tweaks (Hacks)","Description":"Shelly terminal premium hack!"}},"pageContext":{"id":"com-gebeto-shellyhack","__params":{"id":"com-gebeto-shellyhack"}}},
+    "result": {"data":{"dpkg":{"id":"com-gebeto-shellyhack","Name":"Shelly Hack","Package":"com.gebeto.shellyhack","Version":"0.1","Section":"Tweaks (Hacks)","Description":"Shelly terminal premium hack!","Filename":"./debs/shellyhack_0.1.deb"}},"pageContext":{"id":"com-gebeto-shellyhack","__params":{"id":"com-gebeto-shellyhack"}}},
     "staticQueryHashes": []}

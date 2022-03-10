@@ -1,5 +1,5 @@
 {
-    "componentChunkName": "component---src-pages-package-dpkg-id-js",
+    "componentChunkName": "component---src-pages-package-dpkg-id-tsx",
     "path": "/package/com-gebeto-cutecuthack/",
-    "result": {"data":{"dpkg":{"id":"com-gebeto-cutecuthack","Name":"Cute Cut Hack","Package":"com.gebeto.cutecuthack","Version":"0.0.1-5+debug","Section":"Tweaks (Hacks)","Description":"Cute Cut Pro Upgrade The best way to hack this shit"}},"pageContext":{"id":"com-gebeto-cutecuthack","__params":{"id":"com-gebeto-cutecuthack"}}},
+    "result": {"data":{"dpkg":{"id":"com-gebeto-cutecuthack","Name":"Cute Cut Hack","Package":"com.gebeto.cutecuthack","Version":"0.0.1-5+debug","Section":"Tweaks (Hacks)","Description":"Cute Cut Pro Upgrade The best way to hack this shit","Filename":"./debs/cutecuthack_0.0.1-5debug.deb"}},"pageContext":{"id":"com-gebeto-cutecuthack","__params":{"id":"com-gebeto-cutecuthack"}}},
     "staticQueryHashes": []}

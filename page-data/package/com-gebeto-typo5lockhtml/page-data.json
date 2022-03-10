@@ -1,5 +1,5 @@
 {
-    "componentChunkName": "component---src-pages-package-dpkg-id-js",
+    "componentChunkName": "component---src-pages-package-dpkg-id-tsx",
     "path": "/package/com-gebeto-typo5lockhtml/",
-    "result": {"data":{"dpkg":{"id":"com-gebeto-typo5lockhtml","Name":"Typo5 LockHTML","Package":"com.gebeto.typo5lockhtml","Version":"2.0","Section":"Widgets","Description":"Часы на весь екран"}},"pageContext":{"id":"com-gebeto-typo5lockhtml","__params":{"id":"com-gebeto-typo5lockhtml"}}},
+    "result": {"data":{"dpkg":{"id":"com-gebeto-typo5lockhtml","Name":"Typo5 LockHTML","Package":"com.gebeto.typo5lockhtml","Version":"2.0","Section":"Widgets","Description":"Часы на весь екран","Filename":"./debs/typo5lockhtml_2.0.deb"}},"pageContext":{"id":"com-gebeto-typo5lockhtml","__params":{"id":"com-gebeto-typo5lockhtml"}}},
     "staticQueryHashes": []}

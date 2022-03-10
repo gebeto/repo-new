@@ -1,5 +1,5 @@
 {
-    "componentChunkName": "component---src-pages-package-dpkg-id-js",
+    "componentChunkName": "component---src-pages-package-dpkg-id-tsx",
     "path": "/package/com-sull-clutchrc/",
-    "result": {"data":{"dpkg":{"id":"com-sull-clutchrc","Name":"Clutch 2.0 RC","Package":"com.sull.clutchrc","Version":"2.0~RC8","Section":"iSystem","Description":"Clutch is an extremely fast cracking utility."}},"pageContext":{"id":"com-sull-clutchrc","__params":{"id":"com-sull-clutchrc"}}},
+    "result": {"data":{"dpkg":{"id":"com-sull-clutchrc","Name":"Clutch 2.0 RC","Package":"com.sull.clutchrc","Version":"2.0~RC8","Section":"iSystem","Description":"Clutch is an extremely fast cracking utility.","Filename":"./debs/clutchrc_2.0_RC8.deb"}},"pageContext":{"id":"com-sull-clutchrc","__params":{"id":"com-sull-clutchrc"}}},
     "staticQueryHashes": []}

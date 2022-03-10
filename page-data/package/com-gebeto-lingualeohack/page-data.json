@@ -1,5 +1,5 @@
 {
-    "componentChunkName": "component---src-pages-package-dpkg-id-js",
+    "componentChunkName": "component---src-pages-package-dpkg-id-tsx",
     "path": "/package/com-gebeto-lingualeohack/",
-    "result": {"data":{"dpkg":{"id":"com-gebeto-lingualeohack","Name":"Lingualeo Hack","Package":"com.gebeto.lingualeohack","Version":"1.4","Section":"Tweaks (Hacks)","Description":"Взлом Lingualeo на премиум, все открыто"}},"pageContext":{"id":"com-gebeto-lingualeohack","__params":{"id":"com-gebeto-lingualeohack"}}},
+    "result": {"data":{"dpkg":{"id":"com-gebeto-lingualeohack","Name":"Lingualeo Hack","Package":"com.gebeto.lingualeohack","Version":"1.4","Section":"Tweaks (Hacks)","Description":"Взлом Lingualeo на премиум, все открыто","Filename":"./debs/lingualeohack_1.4.deb"}},"pageContext":{"id":"com-gebeto-lingualeohack","__params":{"id":"com-gebeto-lingualeohack"}}},
     "staticQueryHashes": []}

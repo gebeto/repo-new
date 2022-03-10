@@ -1,5 +1,5 @@
 {
-    "componentChunkName": "component---src-pages-package-dpkg-id-js",
+    "componentChunkName": "component---src-pages-package-dpkg-id-tsx",
     "path": "/package/com-gebeto-instalikesuserselector/",
-    "result": {"data":{"dpkg":{"id":"com-gebeto-instalikesuserselector","Name":"InstaLikes User Selector","Package":"com.gebeto.instalikesuserselector","Version":"0.0.1-26+debug","Section":"Tweaks","Description":"Select username for likes in InstaLikes"}},"pageContext":{"id":"com-gebeto-instalikesuserselector","__params":{"id":"com-gebeto-instalikesuserselector"}}},
+    "result": {"data":{"dpkg":{"id":"com-gebeto-instalikesuserselector","Name":"InstaLikes User Selector","Package":"com.gebeto.instalikesuserselector","Version":"0.0.1-26+debug","Section":"Tweaks","Description":"Select username for likes in InstaLikes","Filename":"./debs/instalikesuserselector_0.0.1-26debug.deb"}},"pageContext":{"id":"com-gebeto-instalikesuserselector","__params":{"id":"com-gebeto-instalikesuserselector"}}},
     "staticQueryHashes": []}

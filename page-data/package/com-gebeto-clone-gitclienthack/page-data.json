@@ -1,5 +1,5 @@
 {
-    "componentChunkName": "component---src-pages-package-dpkg-id-js",
+    "componentChunkName": "component---src-pages-package-dpkg-id-tsx",
     "path": "/package/com-gebeto-clone-gitclienthack/",
-    "result": {"data":{"dpkg":{"id":"com-gebeto-clone-gitclienthack","Name":"Clone - Git Client Hack","Package":"com.gebeto.clone-gitclienthack","Version":"0.1","Section":"Tweaks (Hacks)","Description":"Clone (Git Client) Hack, full activated PUSH and PULL"}},"pageContext":{"id":"com-gebeto-clone-gitclienthack","__params":{"id":"com-gebeto-clone-gitclienthack"}}},
+    "result": {"data":{"dpkg":{"id":"com-gebeto-clone-gitclienthack","Name":"Clone - Git Client Hack","Package":"com.gebeto.clone-gitclienthack","Version":"0.1","Section":"Tweaks (Hacks)","Description":"Clone (Git Client) Hack, full activated PUSH and PULL","Filename":"./debs/clone-gitclienthack_0.1.deb"}},"pageContext":{"id":"com-gebeto-clone-gitclienthack","__params":{"id":"com-gebeto-clone-gitclienthack"}}},
     "staticQueryHashes": []}

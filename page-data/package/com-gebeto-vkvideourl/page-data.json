@@ -1,5 +1,5 @@
 {
-    "componentChunkName": "component---src-pages-package-dpkg-id-js",
+    "componentChunkName": "component---src-pages-package-dpkg-id-tsx",
     "path": "/package/com-gebeto-vkvideourl/",
-    "result": {"data":{"dpkg":{"id":"com-gebeto-vkvideourl","Name":"VK Video URL","Package":"com.gebeto.vkvideourl","Version":"1.0","Section":"Tweaks","Description":"Твик для получения прямой ссылки на видео длинным тапом"}},"pageContext":{"id":"com-gebeto-vkvideourl","__params":{"id":"com-gebeto-vkvideourl"}}},
+    "result": {"data":{"dpkg":{"id":"com-gebeto-vkvideourl","Name":"VK Video URL","Package":"com.gebeto.vkvideourl","Version":"1.0","Section":"Tweaks","Description":"Твик для получения прямой ссылки на видео длинным тапом","Filename":"./debs/vkvideourl_1.0.deb"}},"pageContext":{"id":"com-gebeto-vkvideourl","__params":{"id":"com-gebeto-vkvideourl"}}},
     "staticQueryHashes": []}

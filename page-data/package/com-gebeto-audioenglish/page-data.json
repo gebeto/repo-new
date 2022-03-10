@@ -1,5 +1,5 @@
 {
-    "componentChunkName": "component---src-pages-package-dpkg-id-js",
+    "componentChunkName": "component---src-pages-package-dpkg-id-tsx",
     "path": "/package/com-gebeto-audioenglish/",
-    "result": {"data":{"dpkg":{"id":"com-gebeto-audioenglish","Name":"Самоучитель английского языка. Полный курс: иностранный язык с нуля для начинающих","Package":"com.gebeto.audioenglish","Version":"1.0","Section":"Tweaks (Hacks)","Description":"Взлом  на подписку, все открыто"}},"pageContext":{"id":"com-gebeto-audioenglish","__params":{"id":"com-gebeto-audioenglish"}}},
+    "result": {"data":{"dpkg":{"id":"com-gebeto-audioenglish","Name":"Самоучитель английского языка. Полный курс: иностранный язык с нуля для начинающих","Package":"com.gebeto.audioenglish","Version":"1.0","Section":"Tweaks (Hacks)","Description":"Взлом  на подписку, все открыто","Filename":"./debs/audioenglish_1.0.deb"}},"pageContext":{"id":"com-gebeto-audioenglish","__params":{"id":"com-gebeto-audioenglish"}}},
     "staticQueryHashes": []}

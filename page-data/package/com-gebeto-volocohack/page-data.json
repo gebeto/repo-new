@@ -1,5 +1,5 @@
 {
-    "componentChunkName": "component---src-pages-package-dpkg-id-js",
+    "componentChunkName": "component---src-pages-package-dpkg-id-tsx",
     "path": "/package/com-gebeto-volocohack/",
-    "result": {"data":{"dpkg":{"id":"com-gebeto-volocohack","Name":"Voloco Hack","Package":"com.gebeto.volocohack","Version":"0.1","Section":"Tweaks (Hacks)","Description":"Voloco Hack open all for free"}},"pageContext":{"id":"com-gebeto-volocohack","__params":{"id":"com-gebeto-volocohack"}}},
+    "result": {"data":{"dpkg":{"id":"com-gebeto-volocohack","Name":"Voloco Hack","Package":"com.gebeto.volocohack","Version":"0.1","Section":"Tweaks (Hacks)","Description":"Voloco Hack open all for free","Filename":"./debs/volocohack_0.1.deb"}},"pageContext":{"id":"com-gebeto-volocohack","__params":{"id":"com-gebeto-volocohack"}}},
     "staticQueryHashes": []}
