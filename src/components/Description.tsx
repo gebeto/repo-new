@@ -16,6 +16,8 @@ const DescriptionWrapper = styled.div`
     margin-bottom: var(--spacing-0);
     min-width: 50px;
     border-radius: 100%;
+    mask-image: radial-gradient(circle, white 100%, black 100%);
+    overflow: hidden;
   }
 `;
 
