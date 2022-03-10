@@ -2,8 +2,6 @@ const fs = require(`fs/promises`);
 const { createFilePath } = require(`gatsby-source-filesystem`);
 
 exports.createPages = async options => {
-  await createPostPages(options);
-
   const {
     getPackagesText,
     exec,
