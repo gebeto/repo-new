@@ -21,6 +21,14 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-styled-components`,
     {
+      resolve: `gatsby-plugin-graphql-codegen`,
+      options: {
+        codegen: true,
+        codegenDelay: 10000,
+        fileName: "src/graphql.ts",
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/blog`,
@@ -89,8 +97,8 @@ module.exports = {
                   url: site.siteMetadata.siteUrl + node.fields.slug,
                   guid: site.siteMetadata.siteUrl + node.fields.slug,
                   custom_elements: [{ "content:encoded": node.html }],
-                })
-              })
+                });
+              });
             },
             query: `
               {
@@ -136,4 +144,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};

@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link, graphql } from "gatsby";
 
-import Layout from "../components/layout";
+import { PageLayout } from "../components/PageLayout";
 import { Meta } from "../components/Meta";
 import { Description } from "../components/Description";
 import { Pill } from "../components/Pill";
@@ -13,15 +13,15 @@ const PackagesPage = ({ data, location }) => {
 
   if (packages.length === 0) {
     return (
-      <Layout location={location} title={title}>
+      <PageLayout location={location} title={title}>
         <Meta title="All packages" />
         <p>No packages found. Add deb files to "debs"</p>
-      </Layout>
+      </PageLayout>
     );
   }
 
   return (
-    <Layout location={location} title={title}>
+    <PageLayout location={location} title={title}>
       <Meta title="All packages" />
       <Description />
       <Cydia />
@@ -58,7 +58,7 @@ const PackagesPage = ({ data, location }) => {
           </div>
         ))}
       </ol>
-    </Layout>
+    </PageLayout>
   );
 };
 

@@ -1,7 +1,16 @@
 import * as React from "react";
 import { Link } from "gatsby";
 
-const Layout = ({ location, title, children }) => {
+export type PageLayoutProps = {
+  location: Location;
+  title: string;
+};
+
+export const PageLayout: React.FC<PageLayoutProps> = ({
+  location,
+  title,
+  children,
+}) => {
   const rootPath = `${__PATH_PREFIX__}/`;
   const isRootPath = location.pathname === rootPath;
   let header;
@@ -32,5 +41,3 @@ const Layout = ({ location, title, children }) => {
     </div>
   );
 };
-
-export default Layout;

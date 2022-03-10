@@ -1,9 +1,9 @@
-import * as React from "react";
+import React from "react";
 import { Link, graphql } from "gatsby";
 
 import { Description } from "../components/Description";
-import Layout from "../components/layout";
-import Seo from "../components/seo";
+import { PageLayout } from "../components/PageLayout";
+import { Meta } from "../components/Meta";
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`;
@@ -11,21 +11,21 @@ const BlogIndex = ({ data, location }) => {
 
   if (posts.length === 0) {
     return (
-      <Layout location={location} title={siteTitle}>
-        <Seo title="All posts" />
+      <PageLayout location={location} title={siteTitle}>
+        <Meta title="All posts" />
         <Description />
         <p>
           No blog posts found. Add markdown posts to "content/blog" (or the
           directory you specified for the "gatsby-source-filesystem" plugin in
           gatsby-config.js).
         </p>
-      </Layout>
+      </PageLayout>
     );
   }
 
   return (
-    <Layout location={location} title={siteTitle}>
-      <Seo title="All posts" />
+    <PageLayout location={location} title={siteTitle}>
+      <Meta title="All posts" />
       <Description />
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
@@ -59,7 +59,7 @@ const BlogIndex = ({ data, location }) => {
           );
         })}
       </ol>
-    </Layout>
+    </PageLayout>
   );
 };
 

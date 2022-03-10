@@ -14,6 +14,7 @@
     "gatsby-plugin-feed": "^4.5.0",
     "gatsby-plugin-gatsby-cloud": "^4.5.2",
     "gatsby-plugin-google-analytics": "^4.5.0",
+    "gatsby-plugin-graphql-codegen": "^3.1.1",
     "gatsby-plugin-image": "^2.5.2",
     "gatsby-plugin-manifest": "^4.5.2",
     "gatsby-plugin-offline": "^5.5.2",
@@ -34,7 +35,8 @@
     "react-helmet": "^6.1.0",
     "styled-components": "^5.3.3",
     "typeface-merriweather": "0.0.72",
-    "typeface-montserrat": "0.0.75"
+    "typeface-montserrat": "0.0.75",
+    "typescript": "^4.6.2"
   },
   "devDependencies": {
     "prettier": "^2.5.1"

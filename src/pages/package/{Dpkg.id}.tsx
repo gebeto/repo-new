@@ -1,8 +1,9 @@
 import * as React from "react";
-import { graphql } from "gatsby";
+import { graphql, PageProps } from "gatsby";
 import styled from "styled-components";
-import Layout from "../../components/layout";
+import { PageLayout } from "../../components/PageLayout";
 import { Pill } from "../../components/Pill";
+import { Dpkg } from "../../graphql";
 
 const DownloadLink = styled.a`
   display: inline-block;
@@ -21,11 +22,24 @@ const PageContent = styled.div`
   margin-top: 16px;
 `;
 
-const PackagePage = ({ data, location }) => {
+type PackagePageProps = PageProps<{
+  dpkg: Pick<
+    Dpkg,
+    | "id"
+    | "Name"
+    | "Package"
+    | "Version"
+    | "Section"
+    | "Description"
+    | "Filename"
+  >;
+}>;
+
+const PackagePage: React.VFC<PackagePageProps> = ({ data, location }) => {
   const { dpkg } = data;
 
   return (
-    <Layout location={location} title={dpkg.Name}>
+    <PageLayout location={location} title={dpkg.Name}>
       <header>
         <PageTitle>
           <span itemProp="headline">{dpkg.Name}</span>
@@ -36,7 +50,7 @@ const PackagePage = ({ data, location }) => {
           <Pill color="orange">{dpkg.Section}</Pill>
         </div>
         <div>
-          <small>{dpkg.Description}</small>
+          <small>{dpkg?.Description}</small>
         </div>
       </header>
       <PageContent>
@@ -44,7 +58,7 @@ const PackagePage = ({ data, location }) => {
           Download .deb
         </DownloadLink>
       </PageContent>
-    </Layout>
+    </PageLayout>
   );
 };
 
