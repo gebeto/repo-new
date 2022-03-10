@@ -5,6 +5,7 @@ import Layout from "../components/layout";
 import Seo from "../components/seo";
 import Bio from "../components/bio";
 import { Pill } from "../components/Pill";
+import { Cydia } from "../components/Cydia";
 
 const PackagesPage = ({ data, location }) => {
   const title = data.site.siteMetadata?.title || "Packages";
@@ -23,6 +24,7 @@ const PackagesPage = ({ data, location }) => {
     <Layout location={location} title={title}>
       <Seo title="All packages" />
       <Bio />
+      <Cydia />
       <ol style={{ listStyle: `none` }}>
         {data.allDpkg.group.map(group => (
           <div className="post-list-group">
