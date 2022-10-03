@@ -1,8 +1,13 @@
-name: Deploy to pages
+name: Deploy to pages 🚀
 
 on:
+  workflow_dispatch:
   push:
     branches: [main]
+
+concurrency:
+  group: "repo-pages"
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -22,16 +27,37 @@ jobs:
 
       - name: "Build"
         run: yarn build
-
-      # - name: Install rsync 📚
-      #   run: |
-      #     apt-get update && apt-get install -y rsync
-
-      - name: "Deploy 🚀"
-        uses: JamesIves/github-pages-deploy-action@v4.2.2
+      
+      - name: Upload artifacts      
+        uses: actions/upload-artifact@v2
         with:
-          branch: gh-pages
-          folder: public
-          token: ${{ secrets.GITHUB_TOKEN }}
-          git-config-name: gebeto
-          git-config-email: slavik.nychkalo@gmail.com
+          name: bundle
+          path: ./public
+
+  deploy:
+    needs: build
+
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v2
+        with:
+          name: bundle
+          path: ./bundle
+      - name: Setup Pages
+        uses: actions/configure-pages@v1
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./bundle
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@main
